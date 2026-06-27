@@ -21,28 +21,36 @@ También puede ocurrir que no exista una solución previa y sea necesario diseñ
 
 La metodología de trabajo se organiza en tres niveles
 
-### Nivel 1 : herramientas locales
+#### Nivel 1 : herramientas locales
 se centra en el uso de herramientas locales  de cada sistema operativo.
 Se utilizara herramientas oficiales de windows y linux junto a un script propio  para automatizarlas.
 
-### Nivel 2 : programa en C, Clone Engine
+#### Nivel 2 : programa en C, Clone Engine
 corresponde al desarrollo de una herramienta propia programada en C de clonación bloque a bloque, denominada Clone Engine. 
 
-### Nivel 3 : Operatividad en entornos reales
+#### Nivel 3 : Operatividad en entornos reales
 consiste en aprender a utilizar herramientas Open Source, para que en el caso que tengamos que diseñas un implementacion para pocos o mcuhos ordenadores sepamos una funcional y suficiente utilizando Clonezilla y FOG. Clonezilla se utilizará como referencia para la clonación local de discos e imágenes, mientras que FOG permitirá el despliegue masivo por red mediante PXE, DHCP, TFTP y multicast.
 
 # 1.4 Objetivos finales
 
-### Nivel 1: 
+#### Nivel 1: 
 Aprender a utilizar las herramientas oficiales y nativas de cada sistema operativo para realizar despliegues locales.
 Entender por qué estas herramientas son importantes: seguridad, integración con el sistema, compatibilidad y control del proceso.
 Comprender qué función cumple cada herramienta dentro del despliegue. En Windows, WinPE permite trabajar fuera del sistema instalado, DiskPart prepara el disco, DISM aplica la imagen y BCDBoot configura el arranque.
 Profundizar en la organización lógica del sistema: particiones, sistemas de archivos, estructura de directorios, imagen del sistema, archivos copiados e identificadores que pueden quedar dentro de una instalación.
 Automatizar el proceso mediante scripts propios para reducir intervención manual y evitar errores repetitivos.
 
-Nivel 2: 
-Mostrar la otra forma de clonación y profundizar mas en como estan organizadas las memorias sectores...
-Nivel 3: 
+#### Nivel 2: 
+La clonación completa del dispositivo de almacenamiento.
+
+Desarrollar una herramienta propia en C, denominada Clone Engine, orientada a copiar bloques de un disco origen hacia una imagen o hacia otro disco destino.
+
+Comprender la diferencia entre un despliegue basado en archivos y una clonación bloque a bloque.
+
+Profundizar en la organización física del almacenamiento: sectores, bloques, particiones, tabla GPT/MBR, cargadores de arranque y estructura completa del disco.
+
+Entender por qué esta técnica permite clonar sistemas Windows, Linux o dual boot sin interpretar el sistema operativo ni el sistema de archivos.
+#### Nivel 3: 
 Aplicar los conocimientos anteriores a herramientas Open Source utilizadas en escenarios reales.
 
 Utilizar Clonezilla como solución de clonación local cuando se necesite preparar pocos equipos o trabajar directamente con discos e imágenes.
